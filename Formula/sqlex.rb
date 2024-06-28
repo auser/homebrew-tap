@@ -1,21 +1,21 @@
 class Sqlex < Formula
   desc "A tool to extract tables from a sql dump and run sql queries on them"
   homepage "https://github.com/auser/sqlex"
-  version "0.1.5"
+  version "0.1.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/auser/sqlex/releases/download/v0.1.5/sqlex-aarch64-apple-darwin.tar.gz"
-      sha256 "2e7bafa65a8910e680a796e7797b3b4e8786744d5c587af5861ae3885e1bb457"
+      url "https://github.com/auser/sqlex/releases/download/v0.1.6/sqlex-aarch64-apple-darwin.tar.gz"
+      sha256 "a649e73edc0a22790f92babe2ab32e75b3034dc66bdc0ea72a2232895d7d8927"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/auser/sqlex/releases/download/v0.1.5/sqlex-x86_64-apple-darwin.tar.gz"
-      sha256 "54e92e7de9ea884373e2ae3b85925d5a5bb60695c51bd752d22be4a0ab5a9b25"
+      url "https://github.com/auser/sqlex/releases/download/v0.1.6/sqlex-x86_64-apple-darwin.tar.gz"
+      sha256 "40178d2ba766ba019545391338d55a8f71d2a37d47905ceef6470bc338bc983b"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/auser/sqlex/releases/download/v0.1.5/sqlex-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5598eef63331d1e12289eeae4c74d093c8439ad0e210dc286e83f28e441cc533"
+      url "https://github.com/auser/sqlex/releases/download/v0.1.6/sqlex-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "48f93e3bd46b78cc99b2de30979a02c7e82c025ff855bbb3fd3af75e39753f7c"
     end
   end
   license "MIT"
