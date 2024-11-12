@@ -1,20 +1,20 @@
 class Traefikctl < Formula
   desc "A CLI for managing traefik with etcd (and more)"
   homepage "https://github.com/auser/traefikctl"
-  version "0.1.22"
+  version "0.1.23"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/auser/traefikctl/releases/download/v0.1.22/traefikctl-aarch64-apple-darwin.tar.xz"
-      sha256 "833181862e5f53aaea27a5cda0f8ae77be2a8891b413c01106f692ecf2b9da27"
+      url "https://github.com/auser/traefikctl/releases/download/v0.1.23/traefikctl-aarch64-apple-darwin.tar.xz"
+      sha256 "5b0c0e8386db51c6db24cf7bb2010373bccf052754cabb60e38002cce35aacf6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/auser/traefikctl/releases/download/v0.1.22/traefikctl-x86_64-apple-darwin.tar.xz"
-      sha256 "12fb2696d200d2024042e38ba28a4f15a1eab0160700c62379671643ae092eb4"
+      url "https://github.com/auser/traefikctl/releases/download/v0.1.23/traefikctl-x86_64-apple-darwin.tar.xz"
+      sha256 "4d2ab16bbaa39f5e5b648f68415d5911672e53ddb451f436c4d8135ab6788fff"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/auser/traefikctl/releases/download/v0.1.22/traefikctl-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "e8a8eade3c24176ff757179afc106ed96ca1bbb458e447373f71bb3d9784d01b"
+    url "https://github.com/auser/traefikctl/releases/download/v0.1.23/traefikctl-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "e2dac8e0c4d52bfae2f3fb2fcab734ea8e86c99647d376ca85cb874bb6232d60"
   end
   license "Apache-2.0 or MIT"
 
